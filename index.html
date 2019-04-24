@@ -1,0 +1,89 @@
+<!-- ne pas modifier le html et le head -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Exercice4jQuery3</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h2>Header</h2>
+  </header>
+  <!-- START Bootstrap-Cookie-Alert -->
+  <!-- container de la page pour mise en forme bootstrap, ne pas toucher -->
+  <nav class="navbar navbar-light justify-content-center">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#!">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!">Link</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">jQuery - Exercice 4 :</h1>
+        <p class="lead">Construisez une page html avec 5 boutons et un rectangle. Chaque bouton provoque une action sur
+          le
+          rectangle.</p>
+        <hr class="my-2">
+        <ul>
+          <li>Bouton 1 : augmente la hauteur de 10px, si il dépasse 100px, il remet la hauteur à 10px</li>
+          <li>Bouton 2 : met le rectangle en vert</li>
+          <li>Bouton 3 : remet les couleurs initiales</li>
+          <li>Bouton 4 : fait disparaître le rectangle</li>
+          <li>Bouton 5 : fait réaparaître le rectangle</li>
+        </ul>
+        <div class="row">
+          <div class="text-center bg-warning rounded p-2 mx-auto d-block">
+            <div class="p-2">
+              <h3>Appuyer sur les boutons pour voir quelques transformations!!!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <!-- les boutons -->
+          <div class="row">
+            <div class="rounded p-2 mx-auto d-block">
+              <button type="button" class="btn btn-primary" id="growHeight">Grow</button>
+              <button type="button" class="btn btn-success" id="green">Green</button>
+              <button type="button" class="btn btn-info" id="restoreColors">Restore colors</button>
+              <button type="button" class="btn btn-warning" id="disapear">Disparaitre</button>
+              <button type="button" class="btn btn-danger" id="show">Reaparaitre</button>
+            </div>
+          </div>
+      </div>
+      <!-- Le rectangle -->
+      <div class="row">
+        <div class="rounded p-2 mx-auto d-block test">
+          <div class="square"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Footer</p>
+  </footer>
+  <!-- scripts boostrap -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="assets/js/main.js"></script> <!--  mon script js perso -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
